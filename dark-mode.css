@@ -1,0 +1,153 @@
+body,
+nav,
+.sidenav,
+input,
+.card {
+    transition: background-color 0.3s ease !important;
+}
+
+:root {
+    --primaryColorDarkMode: #000000;
+    --secondaryColorDarkMode: #242424;
+    --thirdColorDarkMode: #424242;
+    --extraColorDarkMode: #363636;
+    --textColorDarkMode: white;
+}
+
+
+/* Detecta aparienca
+@media (prefers-color-scheme: dark) {
+} */
+
+
+/* Texto */
+
+.dark * {
+    color: var(--textColorDarkMode) !important;
+}
+
+.dark ul li a {
+    color: var(--textColorDarkMode) !important;
+}
+
+.dark nav.white a {
+    color: var(--textColorDarkMode) !important;
+}
+
+
+/* Cuerpo de pagina */
+
+body.dark {
+    background-color: var(--primaryColorDarkMode);
+}
+
+
+/* barra de navegacion */
+
+.dark nav {
+    background-color: var(--primaryColorDarkMode) !important;
+}
+
+.dark nav .search input {
+    background-color: var(--secondaryColorDarkMode) !important;
+}
+
+.dark nav .search input:hover {
+    background-color: var(--extraColorDarkMode) !important;
+}
+
+.dark nav .search input:focus {
+    background-color: var(--thirdColorDarkMode) !important;
+    color: var(--textColorDarkMode) !important;
+}
+
+.dark nav.white {
+    background-color: var(--primaryColorDarkMode) !important;
+}
+
+.dark nav.white .search input {
+    background-color: var(--secondaryColorDarkMode) !important;
+}
+
+.dark nav.white .search input:hover {
+    background-color: var(--extraColorDarkMode) !important;
+}
+
+.dark nav.white .search input:focus {
+    background-color: var(--thirdColorDarkMode) !important;
+    color: var(--textColorDarkMode) !important;
+}
+
+
+/* Barra lateral */
+
+.dark .sidenav {
+    background-color: var(--primaryColorDarkMode) !important;
+}
+
+.dark .sidenav li a:hover {
+    background-color: var(--thirdColorDarkMode) !important;
+}
+
+.dark .sidenav .active {
+    background-color: var(--extraColorDarkMode) !important;
+}
+
+.dark .sidenav .collapsible-body .active {
+    background-color: var(--thirdColorDarkMode) !important;
+}
+
+
+/* Cards */
+
+.dark .card {
+    background-color: var(--secondaryColorDarkMode) !important;
+}
+
+
+/* Buttons */
+
+.dark .waves-effect .waves-ripple {
+    background-color: var(--thirdColorDarkMode) !important;
+}
+
+
+/* .dropdown-content */
+
+.dark .dropdown-content {
+    background-color: var(--thirdColorDarkMode) !important;
+}
+
+.dark .select-dropdown {
+    color: #9e9e9e !important;
+}
+
+
+/*    Scrollbar     */
+
+.dark::-webkit-scrollbar-thumb,
+.dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+
+/*    Labels     */
+
+.dark .input-field>label {
+    background-color: var(--secondaryColorDarkMode) !important;
+}
+
+
+/*    Input fields     */
+
+.dark .input-field input,
+.dark .input-field textarea {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #ccc !important;
+}
+
+.dark .dropdown-content li>a,
+.dark .dropdown-content li>span {
+    color: #ccc !important;
+}

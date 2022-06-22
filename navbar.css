@@ -1,0 +1,212 @@
+/* ----------------- Barra de navegacion ------------------- */
+
+nav {
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    color: #f5f5f5 !important;
+}
+
+nav .btn-floating {
+    background-color: transparent !important;
+}
+
+nav .btn-floating i {
+    line-height: 42px !important;
+}
+
+
+/* Buscador */
+
+nav .search input {
+    -webkit-transition: all .225s cubic-bezier(0.0, 0.0, 0.2, 1) !important;
+    transition: all .225s cubic-bezier(0.0, 0.0, 0.2, 1) !important;
+    border-radius: 4px !important;
+    width: 95% !important;
+    padding-left: 2.3rem !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+nav .search input:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+nav .search input:focus {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
+    color: #424242 !important;
+}
+
+.autocomplete-content {
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+nav .search i {
+    top: 0;
+    position: absolute;
+    left: 0.5rem;
+    height: 56px !important;
+    line-height: 56px !important;
+}
+
+
+/* En caso de tener color blanco*/
+
+:root {
+    --main-colorNavW: #777777;
+}
+
+
+/* nav.white {
+    border-bottom: solid 1px #dadce0;
+} */
+
+nav.white a {
+    color: #424242 !important;
+}
+
+nav.white label {
+    color: var(--main-colorNavW);
+}
+
+nav.white span {
+    color: var(--main-colorNavW);
+}
+
+nav.white .search input {
+    border: solid 0px rgba(0, 0, 0, 0.15) !important;
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    color: var(--main-colorNavW) !important;
+}
+
+::-webkit-input-placeholder {
+    color: #777777;
+    font-weight: 400;
+}
+
+nav.white .search i {
+    color: #777777 !important;
+}
+
+nav.white .search input:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: white !important;
+}
+
+nav.white .search input:focus {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: white !important;
+    color: #424242 !important;
+}
+
+nav.white .navdivRigth a i {
+    color: var(--main-colorNavW);
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {}
+
+
+/* ----------------- sidenav ------------------- */
+
+.sidenav li a {
+    color: rgba(0, 0, 0, 0.67) !important;
+}
+
+.sidenav .active {
+    border-radius: 0 20px 20px 0;
+}
+
+.sidenav li a:hover {
+    border-radius: 0 20px 20px 0;
+}
+
+.sidenav li a {
+    font-size: 13px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    padding-left: 22px !important;
+    cursor: pointer;
+}
+
+.sidenav li a i {
+    margin: 0 12px 0 0 !important;
+    height: 36px !important;
+    line-height: 36px !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 240px !important;
+}
+
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
+    border-radius: 0 20px 20px 0;
+}
+
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
+    background-color: unset;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        margin-top: 0px !important;
+        padding-top: 10px;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .sidenav {
+        margin-top: 0px !important;
+        padding-top: 10px;
+    }
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 993px) {
+    .sidenav {
+        /* height: calc(100% - 67px) !important; */
+        width: 16.6666666667% !important;
+    }
+    .sidenav.sidenav-fixed {
+        position: absolute;
+    }
+}
+
+
+/*--------------------------------------  Issues  --------------------------------------*/
+
+
+/* Colours for sidenav */
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active {
+    background-color: rgba(229, 57, 53, 0.1);
+}

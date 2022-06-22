@@ -1,0 +1,14 @@
+nav ul li a.none {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    cursor: default;
+  }
+  
+  nav ul li a.none:hover {
+    background-color: unset !important;
+  }
+  
+  
+  nav.bb024 {
+    border-bottom: solid 1px #dadce0;
+  }

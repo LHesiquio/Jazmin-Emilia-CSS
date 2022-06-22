@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* :not(i) {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card,
+.card-panel {
+    border-radius: 12px !important;
+    margin-bottom: 0px !important;
+}
+
+
+/* quitar padding en col */
+
+.col.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+th,
+td {
+    padding: 0.25rem 0;
+}
+
+tr {
+    border-bottom: none;
+}
+
+.dropdown-content {
+    border-radius: 4px;
+}
+
+.dropdown-content li {
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 0 !important;
+}
+
+.bb-1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.btn-flat,
+.btn {
+    border-radius: 4px !important;
+}
+
+.btn-flat.rounded,
+.btn.rounded {
+    border-radius: 50px !important;
+}
+
+.btn-flat.icon,
+.btn.icon {
+    border-radius: 10px !important;
+    padding: 0 10px !important;
+}
+
+.non-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/*    Scrollbar     */
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+
+/*    Medias     */
+
+@media only screen and (min-width: 601px) {
+    /* For Tablet or more: */
+    .noShadow-on-med-and-up {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop or more: */
+    .noShadow-on-large {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .container {
+        width: 95% !important;
+    }
+    .noShadow-on-small-only {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+}
+
+
+/*--------------------------------------  Issues  --------------------------------------*/
+
+
+/* Problem with card-content on card fixed */
+
+.card-content {
+    padding: 16px 8px !important;
+}
+
+
+/* Problem with row on margin fixed */
+
+.row {
+    margin-bottom: 8px !important;
+}
+
+
+/* Problem with text 1 line on card fixed */
+
+.fixText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-1 {
+    display: inherit;
+    -webkit-box-orient: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-2 {
+    -webkit-line-clamp: 2;
+}
+
+.line-3 {
+    -webkit-line-clamp: 3;
+}
+
+.line-4 {
+    -webkit-line-clamp: 4;
+}
+
+.line-5 {
+    -webkit-line-clamp: 5;
+}
+
+
+/* Problem with text on dropdown */
+
+.select-wrapper input.select-dropdown {
+    color: #424242;
+    font-size: 1rem !important;
+}
+
+
+/* Problem with nav size fixed */
+
+
+/* nav, nav a.sidenav-trigger, nav a.sidenav-trigger i, nav {
+    height: 56px !important;
+    line-height: 56px !important;
+} */
+
+nav,
+nav .nav-wrapper i,
+nav a.sidenav-trigger,
+nav a.sidenav-trigger i {
+    height: 56px !important;
+    line-height: 56px !important;
+}
+
+@media only screen and (min-width: 601px) {
+    /* nav, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 56px !important;
+        line-height: 56px !important;
+    } */
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+        height: 56px !important;
+        line-height: 56px !important;
+    }
+}
+
+
+/*--------------------------------------  extras  --------------------------------------*/
+
+.red.darken-5 {
+    background-color: #980C2F !important;
+}
+
+.red-text.text-darken-5 {
+    color: #980C2F !important;
+}
+
+.red.darken-6 {
+    background-color: #821532 !important;
+}
+
+.red-text.text-darken-6 {
+    color: #821532 !important;
+}
+
+.waves-effect.waves-red-darken .waves-ripple {
+    /* The alpha value allows the text and background color of the button to still show through. */
+    background-color: rgba(152, 12, 47, 0.2);
+}
+
+
+/* Aplica solo a mobile */
+
+@media only screen and (max-width: 601px) {
+    .center-on-mobile {
+        text-align: center;
+    }
+}
